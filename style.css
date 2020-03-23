@@ -1,48 +1,31 @@
-body {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
-background: rgb(169,3,41); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 */
-
-}
 #button-div {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    width: 18.55%;
-    margin: auto;
-    margin-top: 1%;
-    border: .5px solid black;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    
-    
-
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
+    width: 15.5%;
+    height: 25em;
+    margin: 0 auto;
+    background-color: grey;
     
 }
 button {
-    width: 8em;
-    height: 4em;
-    background-color: gainsboro;
-    border: 0.5px solid black;
-    
+    height: 5em;
+    width: 5em;
+    border-radius: 12%;
 }
 #display {
-    max-height: 4em;
-    max-width: 18.1%;
+    height: 4em;
+    width: 18em;
     border: 1px solid black;
-    margin: 0 auto;
-    margin-top: 10%;
-    border: 2px solid black;
+    margin: auto;
+    background-color: gainsboro;
+    margin-bottom: 1em;
+    margin-top: 7em;
     
 }
-input {
-    max-height: 5.3em;
-    max-width: 99%;
-    font-size: 25px;
-    padding-top: 1em;
-    text-align: right;
-    justify-content: center;
+#calculator {
+    background-color: grey;
+    margin: auto;
+    width: 100em;
+    
 }
-
