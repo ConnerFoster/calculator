@@ -1,4 +1,9 @@
+body {
+    display: grid;
+    background-color: lightblue;
+}
 #button-div {
+
     display:grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: auto auto auto auto;
@@ -19,13 +24,14 @@ button {
     border: 1px solid black;
     margin: auto;
     background-color: gainsboro;
-    margin-bottom: 1em;
-    margin-top: 7em;
+    /*margin-bottom: 1em;
+    margin-top: 7em;*/
     
 }
 #calculator {
+    display: grid;
     background-color: grey;
     margin: auto;
-    width: 100em;
+    width:32em;
     
 }
