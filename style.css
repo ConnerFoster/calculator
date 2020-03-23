@@ -1,26 +1,37 @@
 body {
     display: grid;
-    background-color: lightblue;
+    background-color: #5cdb95;
 }
 #button-div {
 
     display:grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: auto auto auto auto;
-    width: 15.5%;
-    height: 25em;
+    /*width: 15.5%;
+    height: 16em;*/
     margin: 0 auto;
-    background-color: grey;
+    
+    background-color: #05386b;
+    grid-gap: 3%;
+    justify-content: center;
+    margin-bottom: 7%;
     
 }
 button {
-    height: 5em;
-    width: 5em;
+    height: 3.1em;
+    width: 3.1em;
     border-radius: 12%;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: darkgray;
+    color:white;
+}
+button:hover{
+    background-color:gainsboro;
 }
 #display {
-    height: 4em;
-    width: 18em;
+    height: 6em;
+    width: 16.2em;
     border: 1px solid black;
     margin: auto;
     background-color: gainsboro;
@@ -30,8 +41,18 @@ button {
 }
 #calculator {
     display: grid;
-    background-color: grey;
+    background-color: #05386b;
     margin: auto;
-    width:32em;
-    
+    width:18em;
+    height: 30em;
+    border-radius: 2%;
+    justify-content: center;
+    margin-top: 4.5em;
+    transform: scale(1.1);
+}
+.red-buttons:hover{
+    background-color:lightsalmon;
+}
+.red-buttons{
+    background-color: salmon;
 }
