@@ -56,3 +56,4 @@ button:hover{
 .red-buttons{
     background-color: salmon;
 }
+button:focus {outline:0;}
