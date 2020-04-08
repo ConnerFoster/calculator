@@ -35,6 +35,9 @@ button:hover{
     border: 1px solid black;
     margin: auto;
     background-color: gainsboro;
+    text-align: right;
+    overflow: hidden;
+    
     /*margin-bottom: 1em;
     margin-top: 7em;*/
     
@@ -49,6 +52,7 @@ button:hover{
     justify-content: center;
     margin-top: 4.5em;
     transform: scale(1.1);
+    
 }
 .red-buttons:hover{
     background-color:lightsalmon;

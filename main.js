@@ -21,6 +21,9 @@ const buttonDiv = document.getElementById('button-div');
 const display = document.getElementById('display');
 const calculatorDiv = document.getElementById('calculator');
 
+let displayArray = [];
+
+
 function add(num1,num2){
     return num1 + num2;
 }
@@ -39,5 +42,19 @@ function modulo(num1,num2){
 function squared(num){
     return num*num;
 }
+
+function operate() {
+    const operators = ["add","subtract","multiply","divide"];
+
+
+}
+function display1() {
+    displayArray.push(1);
+    display.textContent = displayArray.join(" ");
+    console.log(displayArray.toString());
+}
+oneButton.addEventListener('click',display1);
+
+
 
 
