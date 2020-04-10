@@ -25,7 +25,7 @@ let displayArray = [];
 
 
 function add(num1,num2){
-    return num1 + num2;
+    display.textContent = num1 + num2;
 }
 function subtract(num1,num2){
     return num1 - num2;
@@ -43,17 +43,53 @@ function squared(num){
     return num*num;
 }
 
-function operate() {
-    const operators = ["add","subtract","multiply","divide"];
+//function operate() {
+    //const operators = ["add","subtract","multiply","divide"];
 
 
-}
+//}
 function display1() {
     displayArray.push(1);
     display.textContent = displayArray.join(" ");
     console.log(displayArray.toString());
 }
-oneButton.addEventListener('click',display1);
+function display2() {
+    displayArray.push(2);
+    display.textContent = displayArray.join(" ");
+    console.log(displayArray.toString());
+}
+/*let num1 = 0;
+let num2 = 0;
+function storeNum1() {
+    num1 = displayArray.join("");
+    displayArray.length = 0;
+    display.textContent = " ";
+}
+function storeNum2() {
+    num2 = displayArray.join("");
+    displayArray.length = 0;
+    display.textContent = " ";
+}*/
+function operate(operator,num1,num2) {
+    if (operator == "addition") {
+        add(num1,num2);
+    }
+    else if (operator == "subtraction") {
+        subtract(num1,num2);
+    }
+    else if (operator == "multiplication") {
+        multiply(num1,num2);
+    }
+    else if (operator == "division") {
+        divide(num1,num2);
+    }
+    else {
+        console.log('error')
+    }
+}
+oneButton.addEventListener('click', display1);
+twoButton.addEventListener('click', display2);
+addButton.addEventListener('click', operate);
 
 
 

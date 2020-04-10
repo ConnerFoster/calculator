@@ -25,6 +25,7 @@ button {
     font-weight: bold;
     background-color: darkgray;
     color:white;
+    border: none;
 }
 button:hover{
     background-color:gainsboro;
