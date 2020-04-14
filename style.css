@@ -62,3 +62,9 @@ button:hover{
     background-color: salmon;
 }
 button:focus {outline:0;}
+
+h1 {
+  letter-spacing: -1px;
+  font-family: Helvetica;
+  padding-right: 3%;
+}
